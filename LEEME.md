@@ -66,3 +66,7 @@ Cada línea que tenga el comentario "# REPALCE" indica que usted debe ingresar l
 ```
 121. worksheet.update_acell('M1', usd)
 ```
+### 3. Automatizar la ejecución del script
+La ejecución automática del script según la recurrencia que usted desee, se realiza utilizando el Programador de tareas de Windows. En caso de ser usuario de Linux, puede utilzar CRON.
+- [Programador de tareas de Windows user guide](https://learn.microsoft.com/es-es/windows/win32/taskschd/about-the-task-scheduler)
+- [CRON user guide](https://cronitor.io/guides/cron-jobs)

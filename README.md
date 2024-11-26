@@ -11,7 +11,7 @@ The values that are updated here are:
 2. Values of requested CEDEARs (in Argentine pesos and in US dollars).
 3. Values of requested stocks (in US dollars, according to NASDAQ).
 
-## Guía de uso
+## User guide
 ### 1. Google credentials
 In order to access your Google account and use the script to update your Google Sheet, you must obtain a .json file with the access credentials. This file must be saved in the same folder where you will store this Python file. The credentials you need to obtain should be for a service account.
 
@@ -66,3 +66,7 @@ Each line with the comment "# REPLACE" indicates where you need to enter the cor
 ```
 121. worksheet.update_acell('M1', usd)
 ```
+### 3. Automate Script Execution
+The automatic execution of the script at your desired recurrence can be set up using the Windows Task Scheduler. If you are a Linux user, you can use CRON.
+- [Windows Task Scheduler User Guide](https://learn.microsoft.com/es-es/windows/win32/taskschd/about-the-task-scheduler)
+- [CRON user guide](https://cronitor.io/guides/cron-jobs)
