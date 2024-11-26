@@ -95,9 +95,9 @@ for stock, value in values.items():
     if cell:
         if value == 'Value not found':
             calcValue = 'Here you should calculate the stock value as you wish' # REPLACE
-            worksheet.update_cell(cell.row, cell.col + 'Here you must provide a number that represent how many cells to the left you move', calcValue) # REPLACE
+            worksheet.update_cell(cell.row, cell.col + 'Here you must provide a number that represent how many cells to the right you move', calcValue) # REPLACE
         else:
-            worksheet.update_cell(cell.row, cell.col + 'Here you must provide a number that represent how many cells to the left you move', value) # REPLACE
+            worksheet.update_cell(cell.row, cell.col + 'Here you must provide a number that represent how many cells to the right you move', value) # REPLACE
     else:
         print(f'{stock} not found in the sheet provided.')
 
@@ -105,7 +105,7 @@ for stock, value in values.items():
 for stock, value in cedearValuesUSD.items():
     cell = worksheet.find(stock)
     if cell:
-        worksheet.update_cell(cell.row, cell.col + 'Here you must provide a number that represent how many cells to the left you move', value) # REPLACE
+        worksheet.update_cell(cell.row, cell.col + 'Here you must provide a number that represent how many cells to the right you move', value) # REPLACE
     else:
         print(f'{stock} not found in the sheet provided.')
 

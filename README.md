@@ -49,7 +49,7 @@ Each line with the comment "# REPLACE" indicates where you need to enter the cor
 99. else:
 100.     worksheet.update_cell(cell.row, cell.col + 'Here you must provide a number that represent how many cells to the left you move', value) # REPLACE
 ```
-- **Line 100, 108 y 116:** In these lines, you need to specify where you want to store the stock value. In this loop, it looks for the cell where the stock code is stored (e.g., TSLA). From that location, it will move to the right by the number of cells you indicate in line 100, and then store the corresponding stock value. For example:
+- **Line 100, 108 y 116:** In these lines, you need to specify where you want to store the stock value. The loop looks for the cell where the stock code is stored (e.g., TSLA). From that location, it will move to the right by the number of cells you indicate in line 100, and then store the corresponding stock value. For example:
 ```
 93. for stock, value in values.items():
 94.     cell = worksheet.find(stock)
